@@ -2,7 +2,7 @@
 ![Look in terminal](./imgs/img.png)
 For those that live in the terminal and needs to set-up a timer for small things
 
-usage: main.py [-h] [-s [1-1000] | -m [1-120] | -ho 1 or 2 | -t 10:00]
+usage: timer.py [-h] [-s [1-1000] | -m [1-120] | -ho 1 or 2 | -t 10:00]
 
 working mode for timer
 
