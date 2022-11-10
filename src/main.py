@@ -16,7 +16,7 @@ args = parser.parse_args()
 current_time = [int(i) for i in str(datetime.datetime.now().time()).split('.')[0].split(":")[:2]]
 
 def timer(duration):
-	pbar = tqdm(range(duration))
+	pbar = tqdm(range(duration), desc="timer", colour="green", bar_format="{desc}:|{bar}|{elapsed_s:1.0f}/{total}s {percentage:3.0f}%")
 	pbar.update(duration)
 	pbar.refresh()
 	while duration:
