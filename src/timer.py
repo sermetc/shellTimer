@@ -3,7 +3,7 @@ from tqdm import tqdm
 from time import sleep
 import datetime
 from sys import platform
-from subprocess import Popen, PIPE
+from subprocess import Popen
 
 parser = argparse.ArgumentParser(description="working mode for timer")
 
