@@ -2,8 +2,11 @@ import argparse
 from tqdm import tqdm
 from time import sleep
 import datetime
+from sys import platform
+from subprocess import Popen, PIPE
 
 parser = argparse.ArgumentParser(description="working mode for timer")
+
 
 timer_parser = parser.add_mutually_exclusive_group()
 
@@ -42,4 +45,8 @@ elif args.time != None:
 elif args.min != None:
 	remaining_time = args.min * 60
 	timer(remaining_time)
+
 timer(remaining_time)
+if platform == "darwin":
+	apple_script = f'display notification "Done!" sound name "Glass" with title "Timer"'
+	p = Popen(['osascript', '-e', apple_script])
