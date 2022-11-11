@@ -45,9 +45,10 @@ elif args.time != None:
 		exit(0)
 elif args.min != None:
 	remaining_time = args.min * 60
-	timer(remaining_time)
 
+print("--"*10)
 timer(remaining_time)
+
 if platform == "darwin":
 	apple_script = f'display notification "Done!" sound name "Glass" with title "Timer"'
 	p = Popen(['osascript', '-e', apple_script])
