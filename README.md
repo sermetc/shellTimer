@@ -16,3 +16,7 @@ optional arguments:
   -ho 1 or 2, --hour 1 or 2 hours to time
 
   -t 10:00, --time 10:00 time to time
+
+  [TODO]
+
+  - fix timer -time function
